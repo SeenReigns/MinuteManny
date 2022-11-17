@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E68D4612564A3F200889664 /* TimerAppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerAppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E68D4612564A3F200889664 /* MinuteManny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinuteManny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E68D4642564A3F200889664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E68D4662564A3F200889664 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2E68D4682564A3F200889664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		2E68D4622564A3F200889664 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E68D4612564A3F200889664 /* TimerAppExample.app */,
+				2E68D4612564A3F200889664 /* MinuteManny.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E68D4602564A3F200889664 /* TimerAppExample */ = {
+		2E68D4602564A3F200889664 /* MinuteManny */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E68D4752564A3F700889664 /* Build configuration list for PBXNativeTarget "TimerAppExample" */;
+			buildConfigurationList = 2E68D4752564A3F700889664 /* Build configuration list for PBXNativeTarget "MinuteManny" */;
 			buildPhases = (
 				2E68D45D2564A3F200889664 /* Sources */,
 				2E68D45E2564A3F200889664 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TimerAppExample;
+			name = MinuteManny;
 			productName = TimerAppExample;
-			productReference = 2E68D4612564A3F200889664 /* TimerAppExample.app */;
+			productReference = 2E68D4612564A3F200889664 /* MinuteManny.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E68D45C2564A3F200889664 /* Build configuration list for PBXProject "TimerAppExample" */;
+			buildConfigurationList = 2E68D45C2564A3F200889664 /* Build configuration list for PBXProject "MinuteManny" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E68D4602564A3F200889664 /* TimerAppExample */,
+				2E68D4602564A3F200889664 /* MinuteManny */,
 			);
 		};
 /* End PBXProject section */
@@ -287,13 +287,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3SEC78SH4;
+				DEVELOPMENT_TEAM = J545Y82W97;
 				INFOPLIST_FILE = TimerAppExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MinuteManny;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = code.with.cal.TimerAppExample;
+				PRODUCT_BUNDLE_IDENTIFIER = reina.manual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +308,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3SEC78SH4;
+				DEVELOPMENT_TEAM = J545Y82W97;
 				INFOPLIST_FILE = TimerAppExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MinuteManny;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = code.with.cal.TimerAppExample;
+				PRODUCT_BUNDLE_IDENTIFIER = reina.manual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E68D45C2564A3F200889664 /* Build configuration list for PBXProject "TimerAppExample" */ = {
+		2E68D45C2564A3F200889664 /* Build configuration list for PBXProject "MinuteManny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E68D4732564A3F700889664 /* Debug */,
@@ -331,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E68D4752564A3F700889664 /* Build configuration list for PBXNativeTarget "TimerAppExample" */ = {
+		2E68D4752564A3F700889664 /* Build configuration list for PBXNativeTarget "MinuteManny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E68D4762564A3F700889664 /* Debug */,
