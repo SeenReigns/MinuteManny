@@ -49,6 +49,8 @@ class ViewController: UIViewController
 		
 		alert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (_) in
 			self.count = 0
+            self.timerCounting2 = false
+            self.timerCounting = false
 			self.timer.invalidate()
 			self.TimerLabel.text = self.makeTimeString(hours: 0, minutes: 0, seconds: 0)
             self.count2 = 0
