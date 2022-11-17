@@ -59,7 +59,8 @@ class ViewController: UIViewController
             self.mannycounts = [Int]()
             self.avgManualTime.text = String(0)
             self.locker = 0
-            
+            self.longestno = 0
+            self.longest.text = String(self.longestno)
 			self.startStopButton.setTitle("START", for: .normal)
 			self.startStopButton.setTitleColor(UIColor.green, for: .normal)
 		}))
@@ -83,7 +84,7 @@ class ViewController: UIViewController
             timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter2), userInfo: nil, repeats: true)
             var imagemanual: UIImage = UIImage(named: "skatemanual")!
             self.skateboard.image = imagemanual
-            self.skateboard.transform = CGAffineTransform(translationX: -20, y: -40)
+            self.skateboard.transform = CGAffineTransform(translationX: 0, y: 0)
             mannynumber = 1
             print("hey")
             print(self.locker)
