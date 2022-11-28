@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRC-fh-RFf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="SGu-HC-cny">
+            <objects>
+                <tabBarController id="pRC-fh-RFf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wcH-VA-5Yi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="i2B-NQ-h3y"/>
+                        <segue destination="efM-Wa-4zF" kind="relationship" relationship="viewControllers" id="x39-d1-oDT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpL-Ph-ZOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-16"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MinuteManny" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,9 +116,15 @@
                                     <action selector="manualTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zei-i9-cxL"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-Va-Orb">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items/>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.88812239084938249" blue="0.86936073969610739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.88863473459999998" blue="0.55927796409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5Nr-xf-PDj" firstAttribute="leading" secondItem="DQh-vz-0LC" secondAttribute="trailing" id="0Ka-OX-2Of"/>
                             <constraint firstItem="DQh-vz-0LC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EaD-SX-VWE"/>
@@ -112,6 +136,7 @@
                             <constraint firstItem="fpS-9Q-jHH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yqe-Mb-rlC"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="ZrR-QQ-H9y"/>
                     <connections>
                         <outlet property="TimerLabel" destination="fpS-9Q-jHH" id="Yeb-Hd-Xmz"/>
                         <outlet property="TotTime" destination="ShR-Rg-To9" id="exu-gN-YRD"/>
@@ -130,9 +155,35 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
+        <!--Scores-->
+        <scene sceneID="llH-cD-c9F">
+            <objects>
+                <viewController id="efM-Wa-4zF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCh-Vt-yNa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-2G-SSB">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items/>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Sq-Ae-S2M"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.88863473459999998" blue="0.55927796409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scores" image="chart.xyaxis.line" catalog="system" id="Wc1-oa-nXa" userLabel="Scores"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4y-YV-pXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="88"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="skate" width="2219" height="677"/>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="102"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="skate" width="2238" height="1170"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
